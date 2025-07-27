@@ -64,7 +64,7 @@ h2.text-warning {
 
 .project-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(255, 193, 7, 0.2);
+  
     border-color: #ffc107;
     border: 2px solid #ffc107;
 }
