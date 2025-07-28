@@ -11,29 +11,34 @@
 
 <body class="bg-black text-white">
   <!-- Header / Navbar -->
-  <header class="Menubar py-3 d-flex justify-content-between align-items-center px-4">
-    <!-- Logo -->
-    <div class="logo">
-      <h1 class="text-white">Logo</h1>
+  <header class="Menubar py-3 px-4 d-flex flex-wrap justify-content-between align-items-center">
+  <!-- Logo -->
+  <div class="logo">
+    <h1 class="text-white mb-0">Logo</h1>
+  </div>
+
+  <!-- Search + Menu -->
+  <div class="menu-right d-flex flex-column flex-md-row align-items-center gap-3 flex-grow-1 justify-content-md-end mt-3 mt-md-0">
+    
+    <!-- Optional Search Bar -->
+    <div class="search-bar d-flex">
+      <input type="text" class="form-control me-2" placeholder="Search...">
+      <button class="btn">Search</button>
     </div>
 
-    <!-- Search + Menu -->
-    <div class="menu-right d-flex flex-column flex-md-row align-items-center gap-3 flex-grow-1">
-      <!-- Search bar -->
-      
+    <!-- Navigation Menu -->
+    <nav class="menu">
+      <ul class="nav flex-column flex-md-row">
+        <li class="nav-item"><a class="nav-link active text-white" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Services</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Project</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-      <!-- Navigation Menu -->
-      <nav class="menu">
-        <ul class="nav">
-          <li class="nav-item"><a class="nav-link active text-white" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Services</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Project</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
   <!-- Project Section -->
   <section class="project py-5">

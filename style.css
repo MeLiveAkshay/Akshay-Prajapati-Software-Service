@@ -20,10 +20,12 @@ body {
   border-bottom: 2px solid #ffc107;
 }
 
+/* Nav links */
 .menu .nav-link {
   color: #ffffffcc;
   font-weight: 500;
   transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
 }
 
 .menu .nav-link:hover,
@@ -32,11 +34,13 @@ body {
   text-decoration: underline;
 }
 
-/* Search bar (optional if you add it back) */
+/* Search bar styling */
 .search-bar input {
   background-color: #222;
   border: 1px solid #444;
   color: #fff;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
 }
 
 .search-bar input::placeholder {
@@ -47,12 +51,25 @@ body {
   background-color: #ffc107;
   color: #000;
   font-weight: 600;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  transition: background 0.3s ease;
 }
 
-/* Section headings */
-h2.text-warning {
-  font-size: 2.2rem;
-  font-weight: bold;
+.search-bar .btn:hover {
+  background-color: #e0a800;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .menu ul {
+    align-items: flex-start;
+  }
+
+  .menu .nav-link {
+    padding-left: 0;
+  }
 }
 
 /* Project Section */
