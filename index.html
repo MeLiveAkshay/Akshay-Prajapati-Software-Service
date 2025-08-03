@@ -5,73 +5,101 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | Akshay Prajapati Software Service</title>
-  <meta name="description" content="Lorem">
+  <meta name="description" content="Akshay Prajapati Software Service - Professional software solutions for your business." />
+  
+  <!-- Bootstrap & Font Awesome -->
   <link rel="stylesheet" href="bootstrap.css" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body class="bg-black text-white">
   <!-- Header / Navbar -->
-  <header class="Menubar py-3 px-4 d-flex flex-wrap justify-content-between align-items-center">
-  <!-- Logo -->
-  <div class="logo">
-    <h1 class="text-white mb-0">Logo</h1>
-  </div>
-
-  <!-- Search + Menu -->
-  <div class="menu-right d-flex flex-column flex-md-row align-items-center gap-3 flex-grow-1 justify-content-md-end mt-3 mt-md-0">
-    
-    <!-- Optional Search Bar -->
-    <div class="search-bar d-flex">
-      <input type="text" class="form-control me-2" placeholder="Search...">
-      <button class="btn">Search</button>
+  <header class="Menubar bg-black py-3 px-4 d-flex flex-wrap justify-content-between align-items-center">
+    <!-- Logo -->
+    <div class="logo">
+      <a href="#" class="text-decoration-none">
+        <h1 class="text-white mb-0">AkshayPSS</h1>
+      </a>
     </div>
 
-    <!-- Navigation Menu -->
-    <nav class="menu">
-      <ul class="nav flex-column flex-md-row">
-        <li class="nav-item"><a class="nav-link active text-white" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#">About</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#">Services</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#">Project</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    <!-- Search + Menu -->
+    <div class="menu-right d-flex flex-column flex-md-row align-items-center gap-3 flex-grow-1 justify-content-md-end mt-3 mt-md-0">
 
+      <!-- Search Bar -->
+      <form class="search-bar d-flex" role="search" onsubmit="event.preventDefault();">
+        <input type="text" class="form-control me-2" placeholder="Search..." aria-label="Search" />
+        <button class="btn btn-warning text-black" type="submit">Search</button>
+      </form>
+
+      <!-- Hamburger Icon -->
+      <div class="MenuItem d-md-none" onclick="toggleMenu()" aria-label="Toggle navigation" tabindex="0">
+        <i class="fas fa-bars fa-2x text-warning"></i>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="menu">
+        <ul class="nav flex-column flex-md-row mb-0">
+          <li class="nav-item"><a class="nav-link active text-white" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--HeroSection-->
+  <section class="Hero   text-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7 text-center text-md-start mb-4 mb-md-0">
+          <h2 class="display-4 fw-bold mb-3 text-warning">Professional Software Solutions</h2>
+          <p class="lead mb-4">
+            Empowering your business with custom software, web, and mobile solutions. <br>
+            Reliable. Scalable. Tailored for you.
+          </p>
+          <a href="#contact" class="btn btn-warning btn-lg text-black fw-bold me-2">Get Started</a>
+          <a href="#projects" class="btn btn-outline-light btn-lg fw-bold">View Projects</a>
+        </div>
+        <div class="col-md-5 text-center">
+          <img src="software.png" alt="Software Solutions" class="img-fluid rounded shadow" style="max-height: 320px;" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Project Section -->
   <section class="project py-5">
     <div class="container">
-      <h2 class="mb-4 text-warning text-center">Project</h2>
-      <p class="mb-5 text-center">This is the project section where you can showcase your work.</p>
+      <h2 class="mb-4 text-warning text-center">Projects</h2>
+      <p class="mb-5 text-center">Explore some of our recent work and successful projects.</p>
 
       <div class="row g-4">
-        <!-- Project Cards -->
         <div class="col-md-4">
-          <div class="project-item bg-secondary p-3 rounded text-center h-100">
-            <img src="project1.jpg" alt="Project 1" class="img-fluid rounded mb-3" />
+          <div class="project-item  p-3 rounded text-center h-100">
+            <img src="akshay.png" alt="Project 1" class="img-fluid rounded mb-3 imageItem" loading="lazy"  />
             <h3>Project 1</h3>
-            <p>Description of Project 1.</p>
+            <p>Custom CRM solution for small businesses to manage clients efficiently.</p>
             <a href="#" class="btn btn-warning text-black fw-bold mt-2">Read More</a>
           </div>
         </div>
 
         <div class="col-md-4">
-          <div class="project-item bg-secondary p-3 rounded text-center h-100">
-            <img src="project2.jpg" alt="Project 2" class="img-fluid rounded mb-3" />
+          <div class="project-item p-3 rounded text-center h-100">
+            <img src="akshay.png" alt="Project 2" class="img-fluid rounded mb-3 imageItem" loading="lazy" />
             <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
+            <p>E-commerce platform with secure payment integration and analytics.</p>
             <a href="#" class="btn btn-warning text-black fw-bold mt-2">Read More</a>
           </div>
         </div>
 
         <div class="col-md-4">
-          <div class="project-item bg-secondary p-3 rounded text-center h-100">
-            <img src="project3.jpg" alt="Project 3" class="img-fluid rounded mb-3" />
+          <div class="project-item  p-3 rounded text-center h-100">
+            <img src="akshay.png" alt="Project 3" class="img-fluid rounded mb-3 imageItem" loading="lazy" />
             <h3>Project 3</h3>
-            <p>Description of Project 3.</p>
+            <p>Mobile app for real-time delivery tracking and customer feedback.</p>
             <a href="#" class="btn btn-warning text-black fw-bold mt-2">Read More</a>
           </div>
         </div>
@@ -79,37 +107,261 @@
     </div>
   </section>
 
-
-    <!-- About Section -->
-    <section class="about py-5 container ">
-      <div class="container">
-        <h2 class="mb-4 text-warning text-center">About Us</h2>
-        <p class="text-center">We are a software service company dedicated to providing top-notch solutions.</p>
+  <!-- ClientSay -->
+  <section class="client-say py-5 bg-black text-white">
+    <div class="container bg-black">
+      <h2 class="mb-4 text-warning text-center">What Our Clients Say</h2>
+      <p class="text-center mb-5">Hear from our satisfied clients about their experience working with us.</p>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4 " >
+          <div class="testimonial project-item  p-4 rounded text-center h-100">
+            <p class="mb-3">"The team delivered our project on time and exceeded our expectations. Highly recommended!"</p>
+            <h5 class="mb-0 text-warning ">— Priya Sharma</h5>
+            <small>CEO, Acme Corp</small>
+          </div>
+        </div>
+        <div class="col-md-4 -item">
+          <div class="testimonial project-item  p-4 rounded text-center h-100">
+            <p class="mb-3">"Excellent communication and top-notch technical skills. Will work with them again."</p>
+            <h5 class="mb-0 text-warning">— John Doe</h5>
+            <small>Founder, TechStart</small>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="testimonial project-item p-4 rounded text-center h-100">
+            <p class="mb-3">"Professional, reliable, and creative. Our app is now loved by our customers!"</p>
+            <h5 class="mb-0 text-warning">— Aisha Khan</h5>
+            <small>Product Manager, QuickDeliver</small>
+          </div>
+        </div>
       </div>
-      <div class="row g-4">
-        <div class="col-md-4  ">
-          <div class="about-item project-item bg-secondary p-3 rounded text-center h-100">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about py-5 ">
+    <div class="container ">
+      <h2 class="mb-4 text-warning text-center">About Us</h2>
+      <p class="text-center">We are a software service company dedicated to providing top-notch solutions tailored to your business needs.</p>
+      <div class="row g-4 mt-4">
+        <div class="col-md-4">
+          <div class="about-item project-item  p-3 rounded text-center h-100">
             <h3>Our Mission</h3>
-            <p>To deliver high-quality software solutions that meet our clients' needs.</p>
+            <p>To deliver high-quality, scalable software solutions that empower our clients to succeed.</p>
             <a href="#" class="btn btn-warning text-black fw-bold mt-2">Learn More</a>
           </div>
         </div>
-        <div class="col-md-4 ">
-          <div class="about-item project-item bg-secondary p-3 rounded text-center h-100">
+        <div class="col-md-4">
+          <div class="about-item project-item  p-3 rounded text-center h-100">
             <h3>Our Vision</h3>
-            <p>To be a leading software service provider recognized for innovation and excellence.</p>
+            <p>To be a leading software service provider recognized for innovation, reliability, and excellence.</p>
             <a href="#" class="btn btn-warning text-black fw-bold mt-2">Learn More</a>
           </div>
         </div>
-        <div class="col-md-4 ">
-          <div class="about-item project-item bg-secondary p-3 rounded text-center h-100">
+        <div class="col-md-4">
+          <div class="about-item project-item  p-3 rounded text-center h-100">
             <h3>Our Values</h3>
-            <p>Integrity, Innovation, and Customer Satisfaction are at the core of our values.</p>
+            <p>Integrity, innovation, and customer satisfaction are at the core of everything we do.</p>
             <a href="#" class="btn btn-warning text-black fw-bold mt-2">Learn More</a>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+
+<!--Working Model-->
+<section class="workingModel py-5">
+  <div class="container">
+    <h2 class="mb-4 text-warning text-center">Our Working Model</h2>
+    
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="timeline position-relative py-4">
+          <!-- Timeline vertical line -->
+          <div class="timeline-line"></div>
+
+          <!-- Timeline steps -->
+          <div class="row g-0">
+            <!-- Step 1 -->
+            <div class="col-12 mb-5 timeline-step">
+              <div class="d-flex align-items-center  flex-md-row flex-column text-center text-md-start">
+                <div class="timeline-badge">1</div>
+                <div class="timeline-content ms-md-4 mt-3 mt-md-0">
+                  <h5 class="text-white mb-1">Requirement Gathering</h5>
+                  <p class="text-secondary mb-0 small">Understanding your needs and goals to lay a strong foundation.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="col-12 mb-5 timeline-step">
+              <div class="d-flex align-items-center flex-md-row-reverse flex-column text-center text-md-end">
+                <div class="timeline-badge">2</div>
+                <div class="timeline-content me-md-4 mt-3 mt-md-0">
+                  <h5 class="text-white mb-1">Analysis</h5>
+                  <p class="text-secondary mb-0 small">Evaluating requirements and planning the best approach.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="col-12 mb-5 timeline-step">
+              <div class="d-flex align-items-center flex-md-row flex-column text-center text-md-start">
+                <div class="timeline-badge">3</div>
+                <div class="timeline-content ms-md-4 mt-3 mt-md-0">
+                  <h5 class="text-white mb-1">UI/UX Design</h5>
+                  <p class="text-secondary mb-0 small">Crafting intuitive and engaging user experiences.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="col-12 mb-5 timeline-step">
+              <div class="d-flex align-items-center flex-md-row-reverse flex-column text-center text-md-end">
+                <div class="timeline-badge">4</div>
+                <div class="timeline-content me-md-4 mt-3 mt-md-0">
+                  <h5 class="text-white mb-1">Development</h5>
+                  <p class="text-secondary mb-0 small">Building robust and scalable software solutions.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="col-12 mb-5 timeline-step">
+              <div class="d-flex align-items-center flex-md-row flex-column text-center text-md-start">
+                <div class="timeline-badge">5</div>
+                <div class="timeline-content ms-md-4 mt-3 mt-md-0">
+                  <h5 class="text-white mb-1">Testing</h5>
+                  <p class="text-secondary mb-0 small">Ensuring quality and reliability through rigorous testing.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 6 -->
+            <div class="col-12 timeline-step">
+              <div class="d-flex align-items-center flex-md-row-reverse flex-column text-center text-md-end">
+                <div class="timeline-badge">6</div>
+                <div class="timeline-content me-md-4 mt-3 mt-md-0">
+                  <h5 class="text-white mb-1">Deployment</h5>
+                  <p class="text-secondary mb-0 small">Launching your solution and supporting your success.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Timeline steps -->
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!--Contact Us-->
+  <section class="contactus py-5 bg-black">
+    </style>
+    <div class="container">
+      <h2 class="mb-4 text-warning text-center">Contact Us</h2>
+      <p class="text-center mb-5">Get in touch with us for your software development needs. We're here to help bring your ideas to life.</p>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label text-white">Name</label>
+              <input type="text" class="form-control  project-item text-white " id="name" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label text-white">Email</label>
+              <input type="email" class="form-control   project-item text-white " id="email" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label text-white">Message</label>
+              <textarea class="form-control  text-white project-item " id="message" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn  contact-item  fw-bold">Send Message</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="akshay.png" alt="Contact Us" class="img-fluid rounded shadow" style="max-height: 400px;" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--FQA-->
+  <!-- FAQ Section -->
+<section class="faq-section py-5">
+  <div class="container">
+    <h2 class="mb-4 text-warning text-center">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+
+      <!-- FAQ Item 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="false" aria-controls="faqCollapseOne">
+            What services do you offer?
+          </button>
+        </h2>
+        <div id="faqCollapseOne" class="accordion-collapse collapse" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We offer custom software development, web and mobile app development, and IT consulting services tailored to your business needs.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+            How can I get a quote for my project?
+          </button>
+        </h2>
+        <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Simply fill out the contact form above or email us your requirements. We will get back to you with a tailored quote.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+            Do you provide ongoing support after project delivery?
+          </button>
+        </h2>
+        <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, we offer maintenance and support packages to ensure your software runs smoothly after launch.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+            How long does a typical project take?
+          </button>
+        </h2>
+        <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Project timelines vary based on complexity and requirements, but we always strive to deliver on time and keep you updated throughout the process.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  
+
+  
 
   <!-- Footer -->
   <footer class="bg-black text-white pt-5">
@@ -117,20 +369,20 @@
       <div class="row g-4 text-center text-md-start">
         <div class="col-md-3">
           <h5>Follow us on:</h5>
-          <a href="#" class="d-block text-white">Facebook</a>
-          <a href="#" class="d-block text-white">Twitter</a>
-          <a href="#" class="d-block text-white">Instagram</a>
+          <a href="#" class="d-block text-white"><i class="fab fa-facebook me-2"></i>Facebook</a>
+          <a href="#" class="d-block text-white"><i class="fab fa-twitter me-2"></i>Twitter</a>
+          <a href="#" class="d-block text-white"><i class="fab fa-instagram me-2"></i>Instagram</a>
         </div>
 
         <div class="col-md-3">
           <h5>Contact us:</h5>
-          <p>Phone: +91 1234567890</p>
-          <p>Email: info@example.com</p>
+          <p class="mb-1"><i class="fas fa-phone me-2"></i>+91 1234567890</p>
+          <p class="mb-0"><i class="fas fa-envelope me-2"></i>info@example.com</p>
         </div>
 
         <div class="col-md-3">
           <h5>About us:</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra, arcu ut consectetur fringilla.</p>
+          <p>We provide innovative software solutions to help your business grow and succeed in the digital era.</p>
         </div>
 
         <div class="col-md-3">
@@ -141,11 +393,11 @@
       </div>
 
       <div class="text-center mt-4">
-        <p class="mb-0">&copy; 2025 Akshay Prajapati Software Service. All rights reserved.</p>
+        <p class="mb-0">&copy; 2024 Akshay Prajapati Software Service. All rights reserved.</p>
       </div>
     </div>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 
